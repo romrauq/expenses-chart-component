@@ -15,8 +15,63 @@
 		</style>
 	</head>
 	<body>
-		My balance $921.48 Spending - Last 7 days mon tue wed thu fri sat sun Total this month $478.33
-		+2.4% from last month
+		<main>
+			<div class="balance-container">
+				<div class="text-column">
+					<p class="balance-title">My balance</p>
+					<p class="balance-amount-text" id="balance-amount-output">$921.48</p>
+				</div>
+
+				<div class="circle circle-hollow"></div>
+				<div class="circle circle-filled"></div>
+			</div>
+
+			<div class="chart-container">
+				<p class="heading-text">Spending - Last 7 days</p>
+
+				<div class="week-chart">
+					<div class="day-column">
+						<div class="bar" id="bar-mon"></div>
+						<p class="day">mon</p>
+					</div>
+					<div class="day-column">
+						<div class="bar" id="bar-tue"></div>
+						<p class="day">tue</p>
+					</div>
+					<div class="day-column">
+						<div class="bar" id="bar-wed"></div>
+						<p class="day">wed</p>
+					</div>
+					<div class="day-column">
+						<div class="bar" id="bar-thu"></div>
+						<p class="day">thu</p>
+					</div>
+					<div class="day-column">
+						<div class="bar" id="bar-fri"></div>
+						<p class="day">fri</p>
+					</div>
+					<div class="day-column">
+						<div class="bar" id="bar-sat"></div>
+						<p class="day">sat</p>
+					</div>
+					<div class="day-column">
+						<div class="bar" id="bar-sun"></div>
+						<p class="day">sun</p>
+					</div>
+				</div>
+
+				<div class="bottom-row">
+					<p>Total this month</p>
+					<div>
+						<p class="month-amount">$<span id="total-month-output">478.33</span></p>
+						<div class="right-column">
+							<p><span id="percentage-output">2.4</span>%</p>
+							<p>from last month</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
 
 		<div class="attribution">
 			Challenge by
