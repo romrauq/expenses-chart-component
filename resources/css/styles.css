@@ -34,6 +34,7 @@ main {
 	font-size: 18px;
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	gap: 20px;
 }
 .balance-container {
@@ -57,17 +58,24 @@ main {
 .balance-amount-text {
 	font-weight: 800;
 }
+.circles-container {
+	margin: 0 15px 0 0;
+	display: flex;
+}
 .circle {
 	height: 30px;
 	width: 30px;
 	border-radius: 50%;
 }
 .circle-hollow {
-	margin: 0 0 0 15px;
-	border: 1px solid var(--cream);
+	border: 2px solid var(--cream);
+	z-index: 10;
 }
 .circle-filled {
+	position: absolute;
+	margin: 0 0 0 15px;
 	background-color: var(--dark-brown);
+	z-index: 5;
 }
 .chart-container {
 	display: flex;
@@ -91,11 +99,12 @@ main {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 5px;
+	width: 12%;
+	/* gap: 5px; */
 }
 .bar {
 	height: 100px;
-	width: 45px;
+	width: 100%;
 	background-color: var(--soft-red);
 	border-radius: 5px;
 	cursor: pointer;
