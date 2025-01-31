@@ -87,7 +87,7 @@ main {
 }
 .heading-text {
 	color: var(--dark-brown);
-	margin: 0 0 20px 0;
+	margin: 0 0 40px 0;
 }
 .week-chart {
 	display: flex;
