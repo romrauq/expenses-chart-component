@@ -11,6 +11,9 @@
 	--medium-brown: hsl(28, 10%, 53%);
 	--cream: hsl(27, 66%, 92%);
 	--very-pale-orange: hsl(33, 100%, 98%);
+	--main-width-desktop: 400px;
+	--main-width-mobile: 90%;
+	--small-text-size: 12px;
 }
 
 @font-face {
@@ -18,47 +21,124 @@
 	src: url("../fonts/DMSans-VariableFont_opsz\,wght.ttf");
 }
 
-body {}
-
-main {}
-
-.balance-container {}
-
-.text-column {}
-
-.balance-title {}
-
-.balance-amount-text {}
-
-.circle {}
-
-.circle-hollow {}
-
-.circle-filled {}
-
-.chart-container {}
-
-.heading-text {}
-
-.week-chart {}
-
-.day-column {}
-
-.bar {}
-
-.day {}
-
-.bottom-row {}
-
-.month-amount {}
-
-.right-column {}
-
+body {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+main {
+	font-family: DM Sans;
+	margin: auto 0;
+	font-size: 18px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.balance-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	background-color: var(--soft-red);
+	border-radius: 10px;
+	width: var(--main-width-desktop);
+}
+.text-column {
+	color: var(--cream);
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+.balance-title {
+	font-size: var(--small-text-size);
+}
+.balance-amount-text {
+	font-weight: 800;
+}
+.circle {
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+}
+.circle-hollow {
+	margin: 0 0 0 15px;
+	border: 1px solid var(--cream);
+}
+.circle-filled {
+	background-color: var(--dark-brown);
+}
+.chart-container {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	width: var(--main-width-desktop);
+	background-color: var(--cream);
+	border-radius: 10px;
+}
+.heading-text {
+	color: var(--dark-brown);
+	margin: 0 0 20px 0;
+}
+.week-chart {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 0 20px 0;
+	border-bottom: 1px solid var(--medium-brown);
+}
+.day-column {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 5px;
+}
+.bar {
+	height: 100px;
+	width: 45px;
+	background-color: var(--soft-red);
+	border-radius: 5px;
+	cursor: pointer;
+}
+.bar:hover {
+	background-color: var(--cyan);
+}
+.day {
+	color: var(--medium-brown);
+	font-size: var(--small-text-size);
+}
+.bottom-row {
+	color: var(--medium-brown);
+	padding: 20px 0 0 0;
+	justify-content: space-between;
+	gap: 5px;
+	font-size: var(--small-text-size);
+}
+/* .bottom-row-title {
+} */
+.bottom-bottom-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.month-amount {
+	color: var(--dark-brown);
+	font-size: 26px;
+	font-weight: 800;
+}
+.right-column {
+	text-align: end;
+	display: flex;
+	flex-direction: column;
+}
+.percentage-text {
+	font-weight: 600;
+	color: var(--dark-brown);
+}
 .attribution {
 	font-size: 11px;
 	text-align: center;
 }
-
 .attribution a {
 	color: hsl(228, 45%, 44%);
 }
