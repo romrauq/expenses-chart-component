@@ -1,0 +1,64 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--soft-red: hsl(10, 79%, 65%);
+	--cyan: hsl(186, 34%, 60%);
+	--dark-brown: hsl(25, 47%, 15%);
+	--medium-brown: hsl(28, 10%, 53%);
+	--cream: hsl(27, 66%, 92%);
+	--very-pale-orange: hsl(33, 100%, 98%);
+}
+
+@font-face {
+	font-family: DM Sans;
+	src: url("../fonts/DMSans-VariableFont_opsz\,wght.ttf");
+}
+
+body {}
+
+main {}
+
+.balance-container {}
+
+.text-column {}
+
+.balance-title {}
+
+.balance-amount-text {}
+
+.circle {}
+
+.circle-hollow {}
+
+.circle-filled {}
+
+.chart-container {}
+
+.heading-text {}
+
+.week-chart {}
+
+.day-column {}
+
+.bar {}
+
+.day {}
+
+.bottom-row {}
+
+.month-amount {}
+
+.right-column {}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
